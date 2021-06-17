@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import skill_course
+from .models import *
 # Register your models here.
 
-admin.site.register(skill_course)
+@admin.register(user)
+class user(admin.ModelAdmin):
+    list_display = ['id', 'email']
