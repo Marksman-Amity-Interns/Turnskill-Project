@@ -25,6 +25,7 @@ class course(models.Model):
     count_videos = models.IntegerField(null=True, blank=True, default=0)
     instructor = models.ForeignKey(user, on_delete=models.SET_NULL, null=True)
     islive = models.BooleanField(default=False)
+    isonetoone = models.BooleanField(default=False)
     price = models.DecimalField(max_digits=7, decimal_places=2, null=True, blank=True)
 
     def __str__(self):
@@ -44,8 +45,6 @@ class enrolment(models.Model):
     course_id = models.ForeignKey(course, on_delete=models.SET_NULL, null=True)
     user_id = models.ForeignKey(user, related_name='user_id', on_delete=models.SET_NULL, null=True)
 
-    def __str__(self):
-        return self.user_id
 
 
 class skill(models.Model):

@@ -8,6 +8,11 @@ class CourseSerializer(serializers.ModelSerializer):
         model = course
         fields = '__all__'
 
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = user
+        fields = ['first_name', 'last_name', 'count_course', 'job', 'email']
+
 class UserForCourseSerializer(serializers.ModelSerializer):
     class Meta:
         model = user
