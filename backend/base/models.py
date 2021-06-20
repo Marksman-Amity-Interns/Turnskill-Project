@@ -39,7 +39,7 @@ class video(models.Model):
     transcript_url = models.TextField(null=True, blank=True)
 
     def __str__(self):
-        return self.video_id
+        return self.title
 
 class enrolment(models.Model):
     course_id = models.ForeignKey(course, on_delete=models.SET_NULL, null=True)
