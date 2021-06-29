@@ -3,7 +3,7 @@
 **OBJECTIVE** - CREATE .PY FILES CONTAINING THE REST APIs OF THESE MODELS
 
 <ul>
-<li>Shreyan - Summarisation
+<li>Shreyan & Sparsh - Summarisation
 <li>Ekansh and Anika - Sentiment Analysis
 <li>Kumail, Surya, Harshit - Transcript & Translation
 </ul>
